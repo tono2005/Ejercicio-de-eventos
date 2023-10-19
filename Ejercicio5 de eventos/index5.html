@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de Añadir Elemento a Lista</title>
+  <script>
+    function agregarElemento() {
+      var lista = document.getElementById("mi-lista");
+      var nuevoElemento = document.createElement("li");
+      nuevoElemento.textContent = "Nuevo elemento";
+      lista.appendChild(nuevoElemento);
+    }
+  </script>
+</head>
+<body>
+
+  <button id="boton-li" onclick="agregarElemento()">Añadir Elemento</button>
+
+  <ul id="mi-lista">
+    <li>Elemento existente</li>
+  </ul>
+
+</body>
+</html>

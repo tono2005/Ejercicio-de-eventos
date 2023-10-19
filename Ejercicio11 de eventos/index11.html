@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evento dragstart en una imagen</title>
+    <link rel="stylesheet" href="styles11.css">
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        #mensaje {
+            font-weight: bold;
+        }
+
+        #mensaje.dragging {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <img id="imagen" src="imagenes/WhatsApp-Image-2023-10-11-at-3.48.57-PM-_1_.png" draggable="true">
+    <p id="mensaje">Arrastra la imagen para ver el mensaje</p>
+
+    <script>
+        var imagen = document.getElementById("imagen");
+        var mensaje = document.getElementById("mensaje");
+
+        imagen.addEventListener("dragstart", function(event) {
+            mensaje.innerHTML = "Arrastrando la imagen...";
+            mensaje.classList.add("dragging");
+        });
+
+        imagen.addEventListener("dragend", function(event) {
+            mensaje.innerHTML = "Imagen arrastrada";
+            mensaje.classList.remove("dragging");
+        });
+    </script>
+</body>
+</html>

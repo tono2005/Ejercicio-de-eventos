@@ -1,0 +1,9 @@
+.elemento {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .elemento.activo {
+    background-color: blue;
+    color: white;
+  }

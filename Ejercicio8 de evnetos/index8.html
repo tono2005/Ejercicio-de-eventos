@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>ON MOUSE OVER - ON MOUSE OUT</h1>
+
+    <script lang="javaScrpt">
+
+        function pintar(col){
+            document.getElementById(`cuadrado`).style.background = col;
+        }
+    </script>
+    <a href="#" onmouseover="pintar(`#f00`)" onmousemover="pintar(`#000`)">Rojo</a>
+    <a href="#" onmouseover="pintar(`#0f0`)" onmousemover="pintar(`#000`)">Verde</a>
+    <a href="#" onmouseover="pintar(`#00f`)" onmousemover="pintar(`#000`)">Azul</a>
+
+    <div id="cuadrado" style="background:#000;width:400px;height:400px"></div>
+</body>
+</html>
